@@ -42,3 +42,11 @@
                                 status="   Pending"
             print (f"{i+1} - {tasks[i]['name'] } {status}")#as i =0 to print correct number of tasks as list satrts from 0 
 ```
+
+### Resources
+[W3 Schools](https://www.w3schools.com/python/default.asp)    
+
+[Bro code youtube video](https://youtu.be/ix9cRaBkVe0?si=-111wXAjfiCWIzgQ)
+
+
+[free code camp git & github course](https://youtu.be/mAFoROnOfHs?si=PhNekLneQRHEvMQK)
