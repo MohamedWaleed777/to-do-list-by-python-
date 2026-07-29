@@ -52,7 +52,7 @@ def remove():# #func to removes tasks
             else:
                                 status="   Pending"
             print (f"{i+1} - {tasks[i]['name'] } {status}")
-            
+
     num=int(input("Enter Task Number To Be Removed : " ))# to get the number not string 
     print("")
     if 1<= num <=len(tasks):
@@ -61,6 +61,12 @@ def remove():# #func to removes tasks
         print("")
     else:
          print("Enter the correct number")
+
+import json
+def SaveTasks(): # to save the to do list
+      file =open ("tasks.json","w") 
+      json.dump(tasks,file) # writes list in file 
+      file.close()
 
 
 
@@ -80,6 +86,7 @@ while True :
     elif choice=="4":
         remove()
     elif choice== "5":
+        SaveTasks()
         print("")
         print("Bye Bye LIGHTNING MCQUEEN ")
         print("")
