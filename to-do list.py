@@ -68,9 +68,20 @@ def SaveTasks(): # to save the to do list
       json.dump(tasks,file) # writes list in file 
       file.close()
 
+def load():# to load the saving file 
+    global tasks
 
+    try:
+          file=open("tasks.json","r")
+          tasks=json.load(file)
+          file .close()
+    except:
+          tasks=[]        
+      
+load () # to check before the loop the list 
 
 while True :
+  
     print ("1. Add a task")
     print ("2. View my to-do list")
     print ("3. Mark a task as done")
